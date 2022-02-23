@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DCW</title>
+	<link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="logo">
+				<img src="images/logo_02.gif">
+			</div>
+			<div id="myDIV">
+			  <button class="btn active">HOME</button>
+			  <button class="btn">ABOUT US</button>
+			  <button class="btn">PORTFOLIO</button>
+			  <button class="btn">BLOG</button>
+			  <button class="btn">SHOP</button>
+				<button class="btn">CONTACT US</button>
+			  <button class="btn">PAGES</button>
+			</div>
+		</div>
+		<div class="banner">
+			<img src="images/logo_04.gif">
+		</div>
+		<div class="line">
+			<div class="line_a"><br><hr></div>
+			<div class="line_b"><br><b>WHAT WE OFFER</b></div>
+			<div class="line_a"><br><hr></div>
+		</div>
+		<div class="middle_a">
+			<div class="trai">
+				<img src="images/logo_07.gif">
+			</div>
+			<div class="phai">
+				<img src="images/logo_09.gif">
+			</div>
+		</div>
+		<div class="line">
+			<div class="text_a"><b>NATURAL STONE</b>
+			</div>
+			<div class="text_b"><b>HARDWOOD</b>
+			</div>
+		</div>
+		<div class="middle_b">
+			<div class="middle_b1">
+				<img src="images/logo_13.gif">
+			</div>
+			<div class="middle_b1">
+				<img src="images/logo_12.gif">
+			</div>
+			<div class="middle_b1">
+				<img src="images/logo_14.gif">
+			</div>
+		</div>
+		<div class="body">
+			<div class="body_a"><b>TILE</b>
+			</div>
+			<div class="body_a"><b>CARPET</b>
+			</div>
+			<div class="body_a"><b>LANIMATE</b>
+			</div>
+		</div>
+		<hr>
+		<div class="line">
+			<div class="line_a"><br><hr></div>
+			<div class="line_b"><br><b>WHAT WE OFFER</b></div>
+			<div class="line_a"><br><hr></div>
+		</div>
+		<div class="item">
+			<div class="item_a">
+				<img src="images/logo_18.gif">
+			</div>
+			<div class="item_b">
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				<b>RUPERT WOOD</b>
+			</div>
+			<div class="item_b">
+				<h4><br>Client</h4>
+			</div>
+		</div>
+		<div class="footer">
+		  <div class="footer_a">
+				<p>© 2019 Parquetry. All rights reserved</p>
+			</div>
+			<div class="footer_b">
+				<p>Privacy Policy.</p>
+			</div>
+	  </div>
+	</div>
+	<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+</body>
+</html>
